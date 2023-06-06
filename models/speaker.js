@@ -7,7 +7,8 @@ const speakerSchema = new Schema (
         model_name: { type: String, required: true },
         description: { type: String, required: true },
         price: { type: Number, required: true },
-        in_stock: { type: Boolean, required: true }
+        in_stock: { type: Boolean, required: true },
+        color: { type: String, required: true }
       },
       { timestamps: true }
 )
