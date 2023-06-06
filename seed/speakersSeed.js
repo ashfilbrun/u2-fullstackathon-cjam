@@ -5,11 +5,8 @@ const { Headphone, Speaker } = require ('../models')
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 
-const main = async () =>
-{
-
+const main = async () => {
     const speakers = [
-        
         {
             image: `speakerImages/1Bose600.png`,
             brand:"Bose" ,
@@ -131,8 +128,8 @@ const main = async () =>
             in_stock:false , 
         },
     ]
+    await Speaker.deleteMany()
     await Speaker.insertMany(speakers)
-    await Speaker.deleteMany(speakers)
     console.log('Created speakers!')
 }
 const run = async () => {
