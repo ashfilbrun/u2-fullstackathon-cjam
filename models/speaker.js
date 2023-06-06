@@ -2,7 +2,7 @@ const { Schema } = require('mongoose')
 
 const speakerSchema = new Schema (
     {
-        image: { type: Image, required: true },
+        image: { type: Image, required: true }, //is this correct?
         brand: { type: String, required: true },
         model_name: { type: String, required: true },
         description: { type: String, required: true },
