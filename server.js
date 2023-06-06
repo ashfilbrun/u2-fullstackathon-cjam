@@ -1,3 +1,21 @@
-const BASE_URL = 'http://localhost:3001/'
-// When using the BASE_URL
-axios.get(`${BASE_URL}/someroute`)
+const express = require('express')
+const cors = require('cors')
+const PORT = process.env.PORT || 3001
+const db = require('./db')
+const AppRouter = require(`./routes/AppRouter`)
+
+const app = express()
+
+app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+app.get('/', (req, res) => {
+  res.send('server working')
+})
+
+app.use(`/products`, AppRouter)
+
+app.listen(PORT, () => {
+  console.log(`Express server listening on port ${PORT}`)
+})
