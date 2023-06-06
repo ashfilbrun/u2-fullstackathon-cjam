@@ -1,6 +1,6 @@
-const { Schmea } = require('mongoose')
+const { Schema } = require('mongoose')
 
-const Speaker = new Schema (
+const speakerSchema = new Schema (
     {
         image: { type: Image, required: true },
         brand: { type: String, required: true },
@@ -12,4 +12,4 @@ const Speaker = new Schema (
       { timestamps: true }
 )
 
-module.exports = Speaker
+module.exports = speakerSchema
