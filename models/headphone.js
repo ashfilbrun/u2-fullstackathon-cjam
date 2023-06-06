@@ -8,6 +8,7 @@ const headphoneSchema = new Schema(
     description: { type: String, required: true },
     price: { type: Number, required: true },
     in_stock: { type: Boolean, required: true },
+    color: { type: String, required: true },
   },
   { timestamps: true }
 )
