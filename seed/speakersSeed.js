@@ -15,7 +15,8 @@ const main = async () => {
              fits under any TV and features a matte-black top with metal 
              wraparound grille.` ,
             price: 449.00 ,
-            in_stock:true , 
+            in_stock:true ,
+            color: 'Black',
         },
         {
             image: `speakerImages/2BosePortable.png` ,
@@ -27,6 +28,7 @@ const main = async () => {
               out and nights in.`,
             price: 149.00,
             in_stock: true, 
+            color: 'Blue',
         },
         {
             image: `speakerImages/3BoseWirelessPA.png`,
@@ -38,6 +40,7 @@ const main = async () => {
              to a gig.`,
             price: 699.00 ,
             in_stock: false , 
+            color: 'Black',
         },
         {
             image:`speakerImages/4ATWireless.png` ,
@@ -51,6 +54,7 @@ const main = async () => {
              clear, powerful audio with enhanced bass.` ,
             price: 65 ,
             in_stock: false , 
+            color: 'Black',
         },
         {
             image:`speakerImages/5ATWired.png` ,
@@ -61,6 +65,7 @@ const main = async () => {
               connectivity to computers and other audio devices.` ,
             price:79.95,
             in_stock: true , 
+            color: 'Blue',
         },
         {
             image:`speakerImages/6AT-CSP1.png` ,
@@ -73,6 +78,7 @@ const main = async () => {
               to carry, so you can work or study anywhere.` ,
             price: 129,
             in_stock: true, 
+            color: 'White',
         },
         {
             image:`speakerImages/7DynCore59.png` ,
@@ -85,6 +91,7 @@ const main = async () => {
                 – you need equipment you can trust.`,
             price:2625 ,
             in_stock:true , 
+            color: 'Black',
         },
         {
             image:`speakerImages/8DynCore7.png` ,
@@ -99,6 +106,7 @@ const main = async () => {
             you need to hear – warts and all.` ,
             price:2100 ,
             in_stock:false , 
+            color: 'Black',
         },
         {
             image:`speakerImages/9Hydrashock.png` ,
@@ -113,6 +121,7 @@ const main = async () => {
                 the elements.` ,
             price:179.99 ,
             in_stock:true , 
+            color: 'Black',
         },
         {
             image:`speakerImages/10HydraMini.png`,
@@ -126,6 +135,7 @@ const main = async () => {
                pairing for double the sound!` ,
             price: 29.99,
             in_stock:false , 
+            color: 'Red',
         },
     ]
     await Speaker.deleteMany()
