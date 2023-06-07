@@ -37,10 +37,10 @@ function typeSelection()
 
 const selectedTypes = []
 
-const speakerBox = document.querySelectorAll(`#Speakers`)
-const headphoneBox = document.querySelectorAll(`#Headphones`)
+const speakerBox = document.querySelector(`#typeSpeaker`)
+const headphoneBox = document.querySelector(`#typeHeadphone`)
 
-if (speakerBox.checked) selectedTypes.push(speakerbox.value)
+if (speakerBox.checked) selectedTypes.push(speakerBox.value)
 if (headphoneBox.checked) selectedTypes.push(headphoneBox.value)
 
 const typeString = selectedTypes.join(',')
@@ -48,6 +48,8 @@ console.log(typeString)
 return typeString
 
 }
+
+
 
 
 button.addEventListener('click', async () =>
@@ -58,7 +60,6 @@ button.addEventListener('click', async () =>
     colorTest.innerHTML = selectedColors
     typeTest.innerHTML = selectedTypes
 
-    console.log(`boxes that are chedked ${selectedColors} ${selectedTypes}`)
 })
 
 
