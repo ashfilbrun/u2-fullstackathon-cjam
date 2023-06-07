@@ -1,6 +1,7 @@
 
 
 //definitions
+
 const button = document.querySelector('button')
 const colorTest = document.querySelector("#lblColorsSelected")
 const typeTest = document.querySelector("#lblTypesSelected")
@@ -112,6 +113,7 @@ button.addEventListener('click', async () =>
     colorData.innerHTML = apiColorData
 
 
+
     const matchingColors = apiColorData.filter(color => selectedColors.includes(color.toLowerCase()));
 
     if (matchingColors.length > 0)
@@ -125,8 +127,6 @@ button.addEventListener('click', async () =>
         }
 
 })
-
-
 
 //let response = axios.get(`WebsiteGoesHere`)
 
