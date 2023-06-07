@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 15px;
     padding: 15px;
+    background-color:white;
   }
 
 img {
@@ -17,6 +18,7 @@ img {
     margin: 5px;
     word-wrap: break-word;
     overflow: hidden;
+    box-shadow: 5px 10px  #0A4ABF;
 }
 
 #featured-products
@@ -24,10 +26,11 @@ img {
 display: flex;
 justify-content: space-evenly;
 
+
 }
 
 #Headphones
-{
+{ 
     display: flex;
     justify-content: space-evenly;
 }
@@ -40,4 +43,25 @@ justify-content: space-evenly;
 .shopNow
 {
   max-height: 50px;
+}
+#headerFeatured
+{
+
+    display: flex;
+    justify-content: center;
+    font: 45px bolder;
+}
+#headerSpeakers
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font: 45px bolder;
+}
+#headerHeadphones
+{
+    display: flex;
+    justify-content: center;
+    font: 45px bolder;
+    margin-top: 30px
 }
