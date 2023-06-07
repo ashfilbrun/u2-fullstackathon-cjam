@@ -1,7 +1,7 @@
 const express = require('express')
 const Router = express.Router()
-const HeadphoneRouter = require('./headphoneRouter')
-const SpeakerRouter = require('./speakerRouter')
+const HeadphoneRouter = require('./headphonesRouter')
+const SpeakerRouter = require('./speakersRouter')
 
 Router.use(`/headphones`, HeadphoneRouter)
 Router.use(`/speakers`, SpeakerRouter)
