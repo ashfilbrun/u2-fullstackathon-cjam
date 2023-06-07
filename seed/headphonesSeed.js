@@ -12,7 +12,7 @@ const main = async () => {
             description: `The WH-1000XM5 headphones rewrite the rules for distraction-free listening. Two processors control 8 microphones for unprecedented noise canceling and exceptional call quality.`,
             price: 349.99,
             in_stock: true,
-            color: 'Blue',
+            color: 'Silver',
         },
         {
             image: 'image goes here', //add image file
@@ -21,7 +21,7 @@ const main = async () => {
             description: `Beats Studio³ Wireless headphones deliver a premium listening experience with Pure Adaptive Noise Cancelling (Pure ANC) to actively block external noise, and real-time audio calibration to preserve clarity, range, and emotion.`,
             price: 349.99,
             in_stock: true,
-            color: 'Matte Black',
+            color: 'Shadow Gray',
         },
         {
             image: 'image goes here', //add image file
@@ -34,12 +34,12 @@ const main = async () => {
         },
         {
             image: 'image goes here', //add image file
-            brand: 'Apple',
-            model_name: 'Airpods Max',
-            description: `AirPods Max reimagine over-ear headphones. An Apple-designed dynamic driver provides immersive high-fidelity audio. Every detail, from canopy to cushions, has been designed for an exceptional fit.`,
-            price: 479.99,
+            brand: 'Mark Levinson',
+            model_name: 'No. 5909 Premium High-Resolution Wireless Noise-Cancelling Headphones',
+            description: `Built for passionate listeners who desire a more meaningful relationship with music and the ability to explore their curiosities outside the confines of their homes, the Mark Levinson № 5909 is the perfect packable for inquisitive travelers and audiophiles.`,
+            price: 999.99,
             in_stock: true,
-            color: 'Sky Blue',
+            color: 'Ice Pewter',
         },
         {
             image: 'image goes here', //add image file
