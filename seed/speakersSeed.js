@@ -129,7 +129,7 @@ const main = async () => {
             model_name: `Hydramini`,
             description:`The HydraMini EVERYTHING PROOF Speaker is 
             packed with features that will prepare you for every 
-            adventure! A 6-hour battery life and carabineer clip
+            adventure! A 6-hour batterheay life and carabineer clip
              allow you to enjoy and bring the tunes anywhere. Pair
               two HydraMini speakers together via true wireless
                pairing for double the sound!` ,
