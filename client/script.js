@@ -1,12 +1,13 @@
 
 
 //definitions
-// const button = document.querySelector('button')
-// const colorTest = document.querySelector("#lblColorsSelected")
-// const typeTest = document.querySelector("#lblTypesSelected")
+
+const button = document.querySelector('button')
+const colorTest = document.querySelector("#lblColorsSelected")
+const typeTest = document.querySelector("#lblTypesSelected")
+const colorData = document.querySelector('#apiLbl')
 const FP1div = document.querySelector("#FP1")
 const BASE_URL = `http://localhost:3001/`
-
 
 //selection for individual colors
 // function colorSelection()
@@ -55,20 +56,55 @@ const BASE_URL = `http://localhost:3001/`
 
 
 
-// button.addEventListener('click', async () =>
-// {
-//     const selectedColors = colorSelection()
-//     const selectedTypes = typeSelection()
-
-//     colorTest.innerHTML = selectedColors
-//     typeTest.innerHTML = selectedTypes
-
-// })
 
 
 
+async function getColorData() 
+{
+    try{
+        const response = await axios.get('http://localhost:3001/products/headphones')
+        const headphones = response.data
+        const colors = headphones.map(headphone => headphone.color)
+        return colors
+    } catch (error)
+    {
+        console.error("Stuff is broken", error)
+        return null
+    }
+}
 
 
+
+
+
+
+button.addEventListener('click', async () =>
+{
+
+
+    const selectedColors = colorSelection()
+    const selectedTypes = typeSelection()
+    const apiColorData = await getColorData()
+
+    colorTest.innerHTML = selectedColors
+    typeTest.innerHTML = selectedTypes
+    colorData.innerHTML = apiColorData
+
+
+
+    const matchingColors = apiColorData.filter(color => selectedColors.includes(color.toLowerCase()));
+
+    if (matchingColors.length > 0)
+        {
+            colorData.innerHTML = matchingColors.map(color => `<li>${color.toLowerCase()}</li>`);
+            colorList.innerHTML = colorItems.join('')
+        }
+        else
+        {
+            colorData.innerHTML="nomatching colors"
+        }
+
+})
 
 //let response = axios.get(`WebsiteGoesHere`)
 
