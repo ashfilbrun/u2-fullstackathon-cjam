@@ -2,18 +2,20 @@
 
 //definitions
 const button = document.querySelector('button')
+const colorTest = document.querySelector("#lblColorsSelected")
+const typeTest = document.querySelector("#lblTypesSelected")
 
 //selection for individual colors
 function colorSelection()
 {
 const selectedColors = []
 
-const whiteBox = document.querySelectorAll(`#colorWhite`)
-const blackBox = document.querySelectorAll(`#colorBlack`)
-const grayBox = document.querySelectorAll(`#colorGray`)
-const greenBox = document.querySelectorAll(`#colorGreen`)
-const blueBox = document.querySelectorAll(`#colorBlue`)
-const redBox = document.querySelectorAll(`#colorRed`)
+const whiteBox = document.querySelector(`#colorWhite`)
+const blackBox = document.querySelector(`#colorBlack`)
+const grayBox = document.querySelector(`#colorGray`)
+const greenBox = document.querySelector(`#colorGreen`)
+const blueBox = document.querySelector(`#colorBlue`)
+const redBox = document.querySelector(`#colorRed`)
 
 if (whiteBox.checked) selectedColors.push(whiteBox.value)
 if (blackBox.checked) selectedColors.push(blackBox.value)
@@ -53,7 +55,8 @@ button.addEventListener('click', async () =>
     const selectedColors = colorSelection()
     const selectedTypes = typeSelection()
 
-
+    colorTest.innerHTML = selectedColors
+    typeTest.innerHTML = selectedTypes
 
     console.log(`boxes that are chedked ${selectedColors} ${selectedTypes}`)
 })
