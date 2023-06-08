@@ -8,6 +8,7 @@ The Better Best Buy is a basic e-commerce site for purchasing headphones and spe
 - CSS
 - JavaScript
 - Axios
+- Github
 
 ## Pages
 
@@ -43,3 +44,8 @@ This project was created by:
 
 Feel free to reach out to us for any questions or feedback.
 
+## Attributions
+ - Fonts from https://fonts.google.com/
+ - MDN.com
+ - Images from https://www.bestbuy.com/
+ - Favicon Image from 
