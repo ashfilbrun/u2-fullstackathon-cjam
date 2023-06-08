@@ -17,9 +17,8 @@ The Better Best Buy is a basic e-commerce site for purchasing headphones and spe
 
 The Speakers page displays a collection of speakers available for purchase. It includes the necessary HTML structure, CSS styles, and JavaScript functionality to load and display the speakers dynamically.
 
-### Headphones
+### [Headphones](headphones.html)
 
-[View Headphones Page](headphones.html)
 
 The Headphones page showcases a variety of headphones for customers to choose from. It utilizes HTML, CSS, and JavaScript to render the headphones and provide an interactive shopping experience.
 
