@@ -29,6 +29,8 @@ a {
 
 .logo {
 	margin: 0;
+    padding: 10px;
+    font-size: 60px;
 }
 
 .header {
@@ -192,7 +194,20 @@ img {
     display: grid;
     justify-content: space-evenly;
 }
+#productHeader {
+    font-weight: bold;
+    margin: 20px;
+}
 
+#headphoneHeader {
+    font-weight: bold;
+    margin: 20px;
+}
+
+#speakerHeader {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
 .footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
