@@ -9,6 +9,7 @@ The Better Best Buy is a basic e-commerce site for purchasing headphones and spe
 - JavaScript
 - Axios
 - Github
+- Draw.io
 
 ## Pages
 
@@ -24,6 +25,10 @@ The Headphones page showcases a variety of headphones for customers to choose fr
 ### [Index](index.html)
 
 The Index page serves as the homepage for The Better Best Buy. It features a selection of featured products, as well as sections for both headphones and speakers. The page is designed to provide a visually appealing and user-friendly browsing experience.
+
+## Planning Materials
+
+- ERD https://app.diagrams.net/#G1Vc3FNgOZVQ0QruVFGLC06QbVCrRballa
 
 ## Planned Functionality
 
