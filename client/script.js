@@ -2,7 +2,7 @@
 
 //definitions
 
-const button = document.querySelector('button') // maybe shopNowBtn
+// const button = document.querySelector('button') // maybe shopNowBtn
 const colorTest = document.querySelector("#lblColorsSelected")
 const typeTest = document.querySelector("#lblTypesSelected")
 const colorData = document.querySelector('#apiLbl')
