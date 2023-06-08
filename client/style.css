@@ -93,14 +93,15 @@ img {
     align-items: center;
     display: grid;
     flex-direction: wrap;
-    width: 200;
-    height: 400px;
+    width: fit-content;
+    height: 498px;
     border: .5px solid black;
     padding: 10px;
     margin: 5px;
     word-wrap: break-word;
     overflow: scroll;
     box-shadow: 5px 10px #FFED31;
+    text-align: center;
 }
 
 .container {
@@ -117,8 +118,8 @@ img {
     align-items: center;
     display: grid;
     flex-direction: wrap;
-    width: 200;
-    height: 400px;
+    width: fit-content;
+    height: 498px;
     border: .5px solid black;
     padding: 10px;
     margin: 10px;
@@ -131,8 +132,8 @@ img {
     align-items: center;
     display: grid;
     flex-direction: wrap;
-    width: 200;
-    height: 400px;
+    width: fit-content;
+    height: 498px;
     border: .5px solid black;
     padding: 10px;
     margin: 10px;
