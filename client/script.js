@@ -2,7 +2,7 @@
 
 //definitions
 
-const button = document.querySelector('button')
+const button = document.querySelector('button') // maybe shopNowBtn
 const colorTest = document.querySelector("#lblColorsSelected")
 const typeTest = document.querySelector("#lblTypesSelected")
 const colorData = document.querySelector('#apiLbl')
@@ -180,26 +180,20 @@ console.log(responseFP1)
 async function showFP2() {
     let responseFP2 = await axios.get(`${BASE_URL}products/headphones/`)
     let productData = `
-    <div id="FP2DATA">
-    
-    <img src="../${responseFP2.data[4].image}"/>
-    <div>Brand: ${responseFP2.data[4].brand}</div>
-    <div>Model Name: ${responseFP2.data[4].model_name}</div>
-    <div>Description: ${responseFP2.data[4].description}</div>
-    <div>Color: ${responseFP2.data[4].color}</div>
-    <div>In Stock: ${responseFP2.data[4].in_stock}</div>
-    <div>Price: $${responseFP2.data[4].price}</div>
-    
-    </div>
-    
-    
+        <div id="FP2DATA">
+            <img src="../${responseFP2.data[4].image}"/>
+            <div>Brand: ${responseFP2.data[4].brand}</div>
+            <div>Model Name: ${responseFP2.data[4].model_name}</div>
+            <div>Description: ${responseFP2.data[4].description}</div>
+            <div>Color: ${responseFP2.data[4].color}</div>
+            <div>In Stock: ${responseFP2.data[4].in_stock}</div>
+            <div>Price: $${responseFP2.data[4].price}</div>
+        </div>
     `
     FP2div.innerHTML = productData
     console.log(responseFP2.data.image)
     }
     
-
-
 async function showFP3() {
         let responseFP3 = await axios.get(`${BASE_URL}products/headphones/`)
         let productData = `
