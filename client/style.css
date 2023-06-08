@@ -10,7 +10,6 @@ font-family: 'Nova Oval', cursive; */
 body {
     margin: 0;
     line-height: 1.6;
-	margin: 0;
 	min-height: 100vh;
 }
 
@@ -32,22 +31,7 @@ a {
 	margin: 0;
 }
 
-.nav-bar {
-	margin-top: 4px;
-}
-.logo a, .nav-bar a {
-	padding: 8px 15px;
-	text-transform: uppercase;
-	text-align: center;
-	display: block;
-}
-
-.nav-bar a {
-	color: #34495e;
-	font-size: .99em;
-}
-
-header {
+.header {
     padding-top: .5em;
 	padding-bottom: .5em;
 	border: 1px solid #a2a2a2;
@@ -69,6 +53,7 @@ h1 {
     text-align: center;
     color: rgb(23, 12, 228);
 }
+
 .nav-bar {
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -78,6 +63,19 @@ h1 {
     background-color: rgba(128, 128, 128, 0.258) ;
     padding: 5px;
     list-style: none;
+	margin: 4px 0px 10px 0px;
+}
+
+.logo a, .nav-bar a {
+	padding: 8px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.nav-bar a {
+	color: #34495e;
+	font-size: .99em;
 }
 
 .nav-bar a:hover{
@@ -85,70 +83,106 @@ h1 {
 }
 
 img {
-    max-width: 100px;
+    max-width: 15vmin;
+    min-width: 10vmin;
+    /* align-content: space-around; */
+    object-fit: cover;
 }
 
 .products {
-    display: flex;
+    align-items: center;
+    display: grid;
     flex-direction: wrap;
     width: 200;
     height: 400px;
-    border: 3px solid black;
+    border: .5px solid black;
     padding: 10px;
     margin: 5px;
     word-wrap: break-word;
-    overflow:scroll;
+    overflow: scroll;
     box-shadow: 5px 10px #FFED31;
-    background-color: white;
 }
 
 .container {
     display: grid;
     flex-direction: wrap;
+    justify-content: space-evenly;
     font-family: 'Montserrat', sans-serif;
-}
-#featured-products {
-display: flex;
-justify-content: space-evenly;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    font-size: 12px;
+    object-position: center;
 }
 
-#Headphones { 
-    display: flex;
+.speakers {
+    align-items: center;
+    display: grid;
+    flex-direction: wrap;
+    width: 200;
+    height: 400px;
+    border: .5px solid black;
+    padding: 10px;
+    margin: 10px;
+    word-wrap: break-word;
+    overflow: scroll;
+    box-shadow: 5px 10px #FFED31;
+}
+
+.headphones {
+    align-items: center;
+    display: grid;
+    flex-direction: wrap;
+    width: 200;
+    height: 400px;
+    border: .5px solid black;
+    padding: 10px;
+    margin: 10px;
+    word-wrap: break-word;
+    overflow: scroll;
+    box-shadow: 5px 10px #FFED31;
+}
+
+
+.containerHeader {
+    display: grid;
+    padding: 2px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.shopNowBtn {
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+    font: 45px bolder,
+}
+
+#featuredProducts {
+    display: grid;
+    justify-content: space-evenly;
+
+}
+
+#headphoneProducts {
+    display: grid;
     justify-content: space-evenly;
 }
 
-#Speakers {
-    display: flex;
+#speakerProducts {
+    display: grid;
     justify-content: space-evenly;
 }
 
-.shopNow
-{
-    max-height: 50px;
-}
-#headerFeatured
-{
-
-    display: flex;
-    justify-content: center;
-    font: 45px bolder;
-}
-#headerSpeakers
-{
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    font: 45px bolder;
-}
-#headerHeadphones
-{
-    display: flex;
-    justify-content: center;
-    font: 45px bolder;
-    margin-top: 30px;
+#headphoneContainer { 
+    display: grid;
+    justify-content: space-evenly;
 }
 
-footer {
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
     display: flex;
     justify-content: center;
     /* position: absolute; */
@@ -164,18 +198,16 @@ footer {
 		flex-direction: column;
 		align-items: center;
     	.header{
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
+		    width: 80%;
+		    margin: 0 auto;
+		    max-width: 1150px;
+	    }
 	}
-	}
-
 }
 
 @media (min-width: 1025px) {
 	.header {
 		flex-direction: row;
 		justify-content: space-between;
-	}
-
+    }
 }
