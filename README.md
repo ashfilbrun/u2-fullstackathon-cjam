@@ -48,4 +48,4 @@ Feel free to reach out to us for any questions or feedback.
  - Fonts from https://fonts.google.com/
  - MDN.com
  - Images from https://www.bestbuy.com/
- - Favicon Image from 
+ - Favicon Image from https://icons8.com/icon/set/shopping/ios
