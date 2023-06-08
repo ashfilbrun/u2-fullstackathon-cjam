@@ -18,7 +18,20 @@ const getSpeakersById = async (req, res) => {
     }
 }
 
+const deleteSpeakersById = async (req, res) => {
+    try {
+        const { id } = req.params
+        const speaker = await Speaker.findById(id)
+        if(!speaker) throw Error(`speaker not found`)
+        res.json('speaker not found')
+    } catch (e){
+        console.log(e)
+        res.send(`speaker not deleted`)
+    }
+}
+
 module.exports = {
     getSpeakers,
-    getSpeakersById
+    getSpeakersById,
+    deleteSpeakersById
 }
